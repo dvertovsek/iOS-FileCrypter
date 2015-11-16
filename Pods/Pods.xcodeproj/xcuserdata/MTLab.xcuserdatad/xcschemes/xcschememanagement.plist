@@ -8,19 +8,41 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 		<key>Heimdall.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>3</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict/>
+	<dict>
+		<key>952FE1EB61CA49FEC151B1763B93E741</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AE2A82500031DF8EC05006A161F05538</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E7FD0802517BD203AFB2EB825F84F485</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>

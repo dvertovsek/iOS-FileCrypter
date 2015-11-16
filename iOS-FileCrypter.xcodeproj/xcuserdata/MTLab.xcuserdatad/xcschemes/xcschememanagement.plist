@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Encryption.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>File.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>iOS-FileCrypter.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +23,16 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>52F3D2F31BF9C89400BE120A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>52F3D30F1BF9CBAB00BE120A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>52F3D3231BF9CCC300BE120A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

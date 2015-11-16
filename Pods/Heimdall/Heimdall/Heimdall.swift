@@ -144,6 +144,14 @@ public class Heimdall {
         return nil
     }
     
+    public func privateKeyDataX509() -> NSData? {
+        if let keyData = obtainKeyData(.Private) {
+            return keyData.dataByPrependingX509Header()
+        }
+        
+        return nil
+    }
+    
     ///
     /// - returns: Public key components (modulus and exponent)
     ///
