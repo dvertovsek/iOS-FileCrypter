@@ -1,0 +1,6 @@
+framework module Heimdall {
+  umbrella header "Heimdall-umbrella.h"
+
+  export *
+  module * { export * }
+}
