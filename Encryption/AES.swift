@@ -7,43 +7,72 @@
 //
 
 import Foundation
+
 import CryptoSwift
 import File
-extension String {
+
+public class AesManager
+{
+    private var file: File = File()
+    private var secretKey: String = ""
     
-    public func aesEncrypt(key: String, iv: String) throws -> String{
-        let data = self.dataUsingEncoding(NSUTF8StringEncoding)
-        let enc = try AES(key: key, iv: iv, blockMode:.CBC).encrypt(data!.arrayOfBytes())
+    private var iv: String = ""
+    
+    public init()
+    {
+        self.iv = randomStringWithLength(16)
+        self.secretKey = randomStringWithLength(32)
+    }
+    
+    
+    public func aesEncrypt(message: String)->String
+    {
+        let data = message.dataUsingEncoding(NSUTF8StringEncoding)
+        let enc = try! AES(key: self.secretKey, iv: iv, blockMode:.CBC).encrypt(data!.arrayOfBytes())
         let encData = NSData(bytes: enc, length: Int(enc.count))
         let base64String: String = encData.base64EncodedStringWithOptions(NSDataBase64EncodingOptions(rawValue: 0));
         let result = String(base64String)
         return result
     }
     
-    public func aesDecrypt(key: String, iv: String) throws -> String {
-        let data = NSData(base64EncodedString: self, options: NSDataBase64DecodingOptions(rawValue: 0))
-        let dec = try AES(key: key, iv: iv, blockMode:.CBC).decrypt(data!.arrayOfBytes())
+    public func aesDecrypt(encmessage: String)->String
+    {
+        let data = NSData(base64EncodedString: encmessage, options: NSDataBase64DecodingOptions(rawValue: 0))
+        let dec = try! AES(key: self.secretKey, iv: iv, blockMode:.CBC).decrypt(data!.arrayOfBytes())
         let decData = NSData(bytes: dec, length: Int(dec.count))
-        let result = NSString(data: decData, encoding: NSUTF8StringEncoding)
-        return String(result!)
-    }
-}
-public class AESCrypt
-{
-    private var file: File = File()
-    
-    public init(){}
-    public func SaveKeyToFile()->String
-    {
-        return randomStringWithLength(32) as String
+        if let result = NSString(data: decData, encoding: NSUTF8StringEncoding)
+        {
+            return String(result)
+        }
+        else
+        {
+            return "..."
+        }
+
     }
     
-    public static func AESEncrypt(message: String)->Void
+    public func setKey(var key: String)
     {
+        let noOfCharacters = key.characters.count
+        if(noOfCharacters < 32)
+        {
+            key += randomStringWithLength(32 - key.characters.count)
+        }
+        else if (noOfCharacters > 32)
+        {
+            key = key.substringWithRange(Range<String.Index>(start: key.startIndex, end: key.startIndex.advancedBy(32)))
+        }
+        self.secretKey = key
         
+        SaveKeyToFile(key)
     }
     
-    private func randomStringWithLength (len : Int) -> NSString {
+    private func SaveKeyToFile(key: String) -> Void
+    {
+        file.createFile("secret_key", contentsOfFile: key)
+    }
+    
+    private func randomStringWithLength (len : Int) -> String {
         
         let letters : NSString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789/+*=)(#$%&?"
         
@@ -55,6 +84,6 @@ public class AESCrypt
             randomString.appendFormat("%C", letters.characterAtIndex(Int(rand)))
         }
         
-        return randomString
+        return randomString as String
     }
 }

@@ -12,7 +12,7 @@ public class File {
         //let urlString = fileUrl.absoluteString
         //print("the url = \(urlString)")
         
-        let fileUrl = self.documentsUrl.URLByAppendingPathComponent(fileName)
+        let fileUrl = self.documentsUrl.URLByAppendingPathComponent(fileName+".txt")
         
         try! contentsOfFile.writeToURL(fileUrl, atomically: true, encoding: NSUTF8StringEncoding)
     }
