@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52DF12861BFAA6A500316605 /* File.h in Headers */ = {isa = PBXBuildFile; fileRef = 52DF12851BFAA6A500316605 /* File.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52DF128A1BFAA6A500316605 /* File.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52DF12831BFAA6A500316605 /* File.framework */; };
+		52DF128B1BFAA6A500316605 /* File.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52DF12831BFAA6A500316605 /* File.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		52DF12901BFAA6AF00316605 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF128F1BFAA6AF00316605 /* File.swift */; };
+		52EB3BD51BFA8AD700444DA2 /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB3BD41BFA8AD700444DA2 /* AES.swift */; };
 		52F3D2F81BF9C89400BE120A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F3D2F71BF9C89400BE120A /* AppDelegate.swift */; };
 		52F3D2FA1BF9C89400BE120A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F3D2F91BF9C89400BE120A /* FirstViewController.swift */; };
 		52F3D2FC1BF9C89400BE120A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F3D2FB1BF9C89400BE120A /* SecondViewController.swift */; };
 		52F3D2FF1BF9C89400BE120A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F3D2FD1BF9C89400BE120A /* Main.storyboard */; };
 		52F3D3011BF9C89400BE120A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52F3D3001BF9C89400BE120A /* Assets.xcassets */; };
 		52F3D3041BF9C89400BE120A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F3D3021BF9C89400BE120A /* LaunchScreen.storyboard */; };
-		52F3D3131BF9CBAB00BE120A /* File.h in Headers */ = {isa = PBXBuildFile; fileRef = 52F3D3121BF9CBAB00BE120A /* File.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		52F3D3171BF9CBAB00BE120A /* File.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F3D3101BF9CBAB00BE120A /* File.framework */; };
-		52F3D3181BF9CBAB00BE120A /* File.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52F3D3101BF9CBAB00BE120A /* File.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		52F3D31E1BF9CBBE00BE120A /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F3D31D1BF9CBBE00BE120A /* File.swift */; };
-		52F3D3271BF9CCC300BE120A /* Encryption.h in Headers */ = {isa = PBXBuildFile; fileRef = 52F3D3261BF9CCC300BE120A /* Encryption.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		52F3D32B1BF9CCC300BE120A /* Encryption.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F3D3241BF9CCC300BE120A /* Encryption.framework */; };
 		52F3D32C1BF9CCC300BE120A /* Encryption.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52F3D3241BF9CCC300BE120A /* Encryption.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		52F3D3311BF9CCDC00BE120A /* RSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F3D3301BF9CCDC00BE120A /* RSA.swift */; };
@@ -25,11 +25,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		52F3D3151BF9CBAB00BE120A /* PBXContainerItemProxy */ = {
+		52DF12881BFAA6A500316605 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 52F3D2EC1BF9C89400BE120A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 52F3D30F1BF9CBAB00BE120A;
+			remoteGlobalIDString = 52DF12821BFAA6A500316605;
 			remoteInfo = File;
 		};
 		52F3D3291BF9CCC300BE120A /* PBXContainerItemProxy */ = {
@@ -48,7 +48,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				52F3D3181BF9CBAB00BE120A /* File.framework in Embed Frameworks */,
+				52DF128B1BFAA6A500316605 /* File.framework in Embed Frameworks */,
 				52F3D32C1BF9CCC300BE120A /* Encryption.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -58,6 +58,11 @@
 
 /* Begin PBXFileReference section */
 		11FEE4254A998E59D2108056 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52DF12831BFAA6A500316605 /* File.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = File.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52DF12851BFAA6A500316605 /* File.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = File.h; sourceTree = "<group>"; };
+		52DF12871BFAA6A500316605 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52DF128F1BFAA6AF00316605 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		52EB3BD41BFA8AD700444DA2 /* AES.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AES.swift; sourceTree = "<group>"; };
 		52F3D2F41BF9C89400BE120A /* iOS-FileCrypter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-FileCrypter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F3D2F71BF9C89400BE120A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52F3D2F91BF9C89400BE120A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -66,10 +71,6 @@
 		52F3D3001BF9C89400BE120A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52F3D3031BF9C89400BE120A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52F3D3051BF9C89400BE120A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		52F3D3101BF9CBAB00BE120A /* File.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = File.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		52F3D3121BF9CBAB00BE120A /* File.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = File.h; sourceTree = "<group>"; };
-		52F3D3141BF9CBAB00BE120A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		52F3D31D1BF9CBBE00BE120A /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		52F3D3241BF9CCC300BE120A /* Encryption.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Encryption.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F3D3261BF9CCC300BE120A /* Encryption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Encryption.h; sourceTree = "<group>"; };
 		52F3D3281BF9CCC300BE120A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,20 +80,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		52DF127F1BFAA6A500316605 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		52F3D2F11BF9C89400BE120A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52F3D3171BF9CBAB00BE120A /* File.framework in Frameworks */,
 				C9894563314BF25DB86635C7 /* Pods.framework in Frameworks */,
 				52F3D32B1BF9CCC300BE120A /* Encryption.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		52F3D30C1BF9CBAB00BE120A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				52DF128A1BFAA6A500316605 /* File.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,12 +107,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52DF12841BFAA6A500316605 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				52DF12851BFAA6A500316605 /* File.h */,
+				52DF12871BFAA6A500316605 /* Info.plist */,
+				52DF128F1BFAA6AF00316605 /* File.swift */,
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
 		52F3D2EB1BF9C89400BE120A = {
 			isa = PBXGroup;
 			children = (
 				52F3D2F61BF9C89400BE120A /* iOS-FileCrypter */,
-				52F3D3111BF9CBAB00BE120A /* File */,
 				52F3D3251BF9CCC300BE120A /* Encryption */,
+				52DF12841BFAA6A500316605 /* File */,
 				52F3D2F51BF9C89400BE120A /* Products */,
 				B8EFFAD284624C070C055BEA /* Pods */,
 				666E2631CEF0B2DC9DF44E26 /* Frameworks */,
@@ -122,8 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				52F3D2F41BF9C89400BE120A /* iOS-FileCrypter.app */,
-				52F3D3101BF9CBAB00BE120A /* File.framework */,
 				52F3D3241BF9CCC300BE120A /* Encryption.framework */,
+				52DF12831BFAA6A500316605 /* File.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -142,22 +153,13 @@
 			path = "iOS-FileCrypter";
 			sourceTree = "<group>";
 		};
-		52F3D3111BF9CBAB00BE120A /* File */ = {
-			isa = PBXGroup;
-			children = (
-				52F3D3121BF9CBAB00BE120A /* File.h */,
-				52F3D3141BF9CBAB00BE120A /* Info.plist */,
-				52F3D31D1BF9CBBE00BE120A /* File.swift */,
-			);
-			path = File;
-			sourceTree = "<group>";
-		};
 		52F3D3251BF9CCC300BE120A /* Encryption */ = {
 			isa = PBXGroup;
 			children = (
 				52F3D3261BF9CCC300BE120A /* Encryption.h */,
 				52F3D3281BF9CCC300BE120A /* Info.plist */,
 				52F3D3301BF9CCDC00BE120A /* RSA.swift */,
+				52EB3BD41BFA8AD700444DA2 /* AES.swift */,
 			);
 			path = Encryption;
 			sourceTree = "<group>";
@@ -182,12 +184,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		52F3D30D1BF9CBAB00BE120A /* Headers */ = {
+		52DF12801BFAA6A500316605 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52F3D3131BF9CBAB00BE120A /* File.h in Headers */,
-				52F3D3271BF9CCC300BE120A /* Encryption.h in Headers */,
+				52DF12861BFAA6A500316605 /* File.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +202,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		52DF12821BFAA6A500316605 /* File */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52DF128C1BFAA6A500316605 /* Build configuration list for PBXNativeTarget "File" */;
+			buildPhases = (
+				52DF127E1BFAA6A500316605 /* Sources */,
+				52DF127F1BFAA6A500316605 /* Frameworks */,
+				52DF12801BFAA6A500316605 /* Headers */,
+				52DF12811BFAA6A500316605 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = File;
+			productName = File;
+			productReference = 52DF12831BFAA6A500316605 /* File.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		52F3D2F31BF9C89400BE120A /* iOS-FileCrypter */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52F3D3081BF9C89400BE120A /* Build configuration list for PBXNativeTarget "iOS-FileCrypter" */;
@@ -216,31 +235,13 @@
 			buildRules = (
 			);
 			dependencies = (
-				52F3D3161BF9CBAB00BE120A /* PBXTargetDependency */,
 				52F3D32A1BF9CCC300BE120A /* PBXTargetDependency */,
+				52DF12891BFAA6A500316605 /* PBXTargetDependency */,
 			);
 			name = "iOS-FileCrypter";
 			productName = "iOS-FileCrypter";
 			productReference = 52F3D2F41BF9C89400BE120A /* iOS-FileCrypter.app */;
 			productType = "com.apple.product-type.application";
-		};
-		52F3D30F1BF9CBAB00BE120A /* File */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 52F3D31B1BF9CBAB00BE120A /* Build configuration list for PBXNativeTarget "File" */;
-			buildPhases = (
-				52F3D30B1BF9CBAB00BE120A /* Sources */,
-				52F3D30C1BF9CBAB00BE120A /* Frameworks */,
-				52F3D30D1BF9CBAB00BE120A /* Headers */,
-				52F3D30E1BF9CBAB00BE120A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = File;
-			productName = File;
-			productReference = 52F3D3101BF9CBAB00BE120A /* File.framework */;
-			productType = "com.apple.product-type.framework";
 		};
 		52F3D3231BF9CCC300BE120A /* Encryption */ = {
 			isa = PBXNativeTarget;
@@ -270,10 +271,10 @@
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = air;
 				TargetAttributes = {
-					52F3D2F31BF9C89400BE120A = {
+					52DF12821BFAA6A500316605 = {
 						CreatedOnToolsVersion = 7.1.1;
 					};
-					52F3D30F1BF9CBAB00BE120A = {
+					52F3D2F31BF9C89400BE120A = {
 						CreatedOnToolsVersion = 7.1.1;
 					};
 					52F3D3231BF9CCC300BE120A = {
@@ -295,13 +296,20 @@
 			projectRoot = "";
 			targets = (
 				52F3D2F31BF9C89400BE120A /* iOS-FileCrypter */,
-				52F3D30F1BF9CBAB00BE120A /* File */,
 				52F3D3231BF9CCC300BE120A /* Encryption */,
+				52DF12821BFAA6A500316605 /* File */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		52DF12811BFAA6A500316605 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		52F3D2F21BF9C89400BE120A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -309,13 +317,6 @@
 				52F3D3041BF9C89400BE120A /* LaunchScreen.storyboard in Resources */,
 				52F3D3011BF9C89400BE120A /* Assets.xcassets in Resources */,
 				52F3D2FF1BF9C89400BE120A /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		52F3D30E1BF9CBAB00BE120A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +378,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		52DF127E1BFAA6A500316605 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52DF12901BFAA6AF00316605 /* File.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		52F3D2F01BF9C89400BE120A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -387,29 +396,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		52F3D30B1BF9CBAB00BE120A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				52F3D31E1BF9CBBE00BE120A /* File.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		52F3D31F1BF9CCC300BE120A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				52F3D3311BF9CCDC00BE120A /* RSA.swift in Sources */,
+				52EB3BD51BFA8AD700444DA2 /* AES.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		52F3D3161BF9CBAB00BE120A /* PBXTargetDependency */ = {
+		52DF12891BFAA6A500316605 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 52F3D30F1BF9CBAB00BE120A /* File */;
-			targetProxy = 52F3D3151BF9CBAB00BE120A /* PBXContainerItemProxy */;
+			target = 52DF12821BFAA6A500316605 /* File */;
+			targetProxy = 52DF12881BFAA6A500316605 /* PBXContainerItemProxy */;
 		};
 		52F3D32A1BF9CCC300BE120A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -438,6 +440,47 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		52DF128D1BFAA6A500316605 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = File/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = air.foi.File;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		52DF128E1BFAA6A500316605 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = File/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = air.foi.File;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		52F3D3061BF9C89400BE120A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -547,47 +590,6 @@
 			};
 			name = Release;
 		};
-		52F3D3191BF9CBAB00BE120A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = File/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = air.foi.File;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		52F3D31A1BF9CBAB00BE120A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = File/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = air.foi.File;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		52F3D32E1BF9CCC300BE120A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -632,6 +634,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		52DF128C1BFAA6A500316605 /* Build configuration list for PBXNativeTarget "File" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52DF128D1BFAA6A500316605 /* Debug */,
+				52DF128E1BFAA6A500316605 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		52F3D2EF1BF9C89400BE120A /* Build configuration list for PBXProject "iOS-FileCrypter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -650,14 +660,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		52F3D31B1BF9CBAB00BE120A /* Build configuration list for PBXNativeTarget "File" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				52F3D3191BF9CBAB00BE120A /* Debug */,
-				52F3D31A1BF9CBAB00BE120A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
 		52F3D32D1BF9CCC300BE120A /* Build configuration list for PBXNativeTarget "Encryption" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -665,6 +667,7 @@
 				52F3D32F1BF9CCC300BE120A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
