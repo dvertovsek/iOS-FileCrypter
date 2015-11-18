@@ -8,31 +8,28 @@
 
 import UIKit
 import Encryption
+import File
 class FirstViewController: UIViewController {
 
+    @IBOutlet weak var publicKeyLabel: UILabel!
+    @IBOutlet weak var privateKeyLabel: UILabel!
+    
+    @IBOutlet weak var plainTextView: UITextView!
+    
+    let file: File = File()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-//        var a = AesManager()
-//        a.setKey("333")
-//        a.setKey("fdshgfiudsiufiufy83938398y389y389y398y3983y839y389y389y3893y893y983y89fy89y389y89y89yyf")
-//
-//        var key = a.SaveKeyToFile()
-//        key = "qwertyuioplkjhgfdsazxcvbnmjhgfds"
-//        var key2 = "qwertyuiopDDjhgfdsazxcvbnmjhgfds"
-//
-//        var iv = "1234567890987654"
-//        
-//        var message = "plist"
-//        print(message)
-    }
+        let rsa: RsaManager = RsaManager()
+        publicKeyLabel.text = rsa.getPublicKey()
+        privateKeyLabel.text = rsa.getPrivateKey()
+        
+//        plainTextView.text = "such sad to real"
+//        print(file.viewFileContent("plain_text"))
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
 
 }
 

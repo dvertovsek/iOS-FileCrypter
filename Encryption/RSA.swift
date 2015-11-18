@@ -1,4 +1,5 @@
 import Heimdall
+import CryptoSwift
 import File
 public class RsaManager {
 
@@ -16,9 +17,20 @@ public class RsaManager {
 
             let privateKeyString = privateKeyData.base64EncodedStringWithOptions(.Encoding64CharacterLineLength)
 
+            self.publicKey = publicKeyString
+            self.privateKey = privateKeyString
+            
             file.createFile("private_key", contentsOfFile: privateKeyString)
             file.createFile("public_key", contentsOfFile: publicKeyString)
         }
+    }
+    
+    public func getPublicKey()->String{
+        return self.publicKey
+    }
+    
+    public func getPrivateKey()->String{
+        return self.privateKey
     }
     
     public func rsaEncrypt(message: String)->String{
@@ -33,6 +45,11 @@ public class RsaManager {
         return decryptedString!
     }
 
+    public func shaEncode(message: String)->String{
+        
+        return message.sha512()
+    }
+    
     public func signMessage(message: String)->String{
         
         let signedString = heimdall?.sign(message)

@@ -19,7 +19,7 @@ public class File {
     
     public func viewFileContent(fileName: String) -> String {
         
-        let fileUrl = self.documentsUrl.URLByAppendingPathComponent(fileName)
+        let fileUrl = self.documentsUrl.URLByAppendingPathComponent(fileName+".txt")
         var mytext = ""
         
         do {

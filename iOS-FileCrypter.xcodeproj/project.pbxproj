@@ -641,6 +641,7 @@
 				52DF128E1BFAA6A500316605 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52F3D2EF1BF9C89400BE120A /* Build configuration list for PBXProject "iOS-FileCrypter" */ = {
 			isa = XCConfigurationList;
