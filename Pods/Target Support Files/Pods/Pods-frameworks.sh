@@ -86,8 +86,10 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods/CryptoSwift.framework"
   install_framework "Pods/Heimdall.framework"
+  install_framework "Pods/JLToast.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods/CryptoSwift.framework"
   install_framework "Pods/Heimdall.framework"
+  install_framework "Pods/JLToast.framework"
 fi

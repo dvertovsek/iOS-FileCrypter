@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>JLToast.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>029086F960604A9F282172DEF7EA8A34</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>791850E7C7B52B5F6B881AC41830A03E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>952FE1EB61CA49FEC151B1763B93E741</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>AE2A82500031DF8EC05006A161F05538</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E7FD0802517BD203AFB2EB825F84F485</key>
 		<dict>
 			<key>primary</key>
 			<true/>

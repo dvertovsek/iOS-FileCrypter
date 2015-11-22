@@ -1,13 +1,16 @@
 PODS:
   - CryptoSwift (0.1.1)
   - Heimdall (0.2.5)
+  - JLToast (1.3.2)
 
 DEPENDENCIES:
   - CryptoSwift
   - Heimdall (~> 0.2.1)
+  - JLToast (~> 1.3)
 
 SPEC CHECKSUMS:
   CryptoSwift: c11640d3d66107efc8333e4131a5173f072b1d61
   Heimdall: e388795a9bb50c8403e27cbc48093b9b0380c879
+  JLToast: e76b9f82ca29aef98993053302e5a9c49ed905a4
 
 COCOAPODS: 0.39.0

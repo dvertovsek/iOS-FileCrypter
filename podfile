@@ -4,3 +4,4 @@ use_frameworks!
 
 pod 'CryptoSwift'
 pod 'Heimdall', '~> 0.2.1'
+pod 'JLToast', '~> 1.3'
