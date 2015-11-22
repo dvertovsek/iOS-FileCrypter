@@ -10,14 +10,12 @@ import UIKit
 import Encryption
 import File
 class FirstViewController: UIViewController {
-
-    @IBOutlet weak var publicKeyLabel: UILabel!
-    @IBOutlet weak var privateKeyLabel: UILabel!
-    
-    @IBOutlet weak var plainTextView: UITextView!
     
     let file: File = File()
     
+    @IBOutlet weak var publicKeyLabel: UILabel!
+    @IBOutlet weak var privateKeyLabel: UILabel!
+    @IBOutlet weak var plainTextView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -25,11 +23,18 @@ class FirstViewController: UIViewController {
         let rsa: RsaManager = RsaManager()
         publicKeyLabel.text = rsa.getPublicKey()
         privateKeyLabel.text = rsa.getPrivateKey()
-        
-//        plainTextView.text = "such sad to real"
-//        print(file.viewFileContent("plain_text"))
+        plainTextView.text = file.viewFileContent("plain_text")
 
     }
+    
+    
+    @IBAction func onButtonPressed(sender: UIButton) {
+        
+        print("necu izdat ja")
+    }
 
+
+
+    
 }
 
