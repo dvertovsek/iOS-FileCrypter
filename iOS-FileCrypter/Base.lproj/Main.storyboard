@@ -6,7 +6,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--RSA-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="iOS_FileCrypter" customModuleProvider="target" sceneMemberID="viewController">
@@ -21,8 +21,8 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="axL-ow-Wg9">
                                 <rect key="frame" x="20" y="20" width="560" height="511"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Jun-Ea-K4s">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="821"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Jun-Ea-K4s">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="863"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDr-xr-I9g">
                                                 <rect key="frame" x="0.0" y="0.0" width="560" height="47"/>
@@ -38,32 +38,34 @@
                                                 </attributedString>
                                                 <color key="highlightedColor" red="0.61344977684145552" green="0.48913071720854251" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdq-AH-14v">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Public key:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDL-K8-0JL">
                                                 <rect key="frame" x="0.0" y="47" width="560" height="21"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="1" green="0.0" blue="0.027450980392156862" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Public key" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDL-K8-0JL">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdq-AH-14v">
                                                 <rect key="frame" x="0.0" y="68" width="560" height="21"/>
                                                 <animations/>
+                                                <color key="backgroundColor" red="0.78431372549019607" green="0.97647058823529409" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.25098039215686274" green="0.10196078431372549" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFE-cW-myU">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Private key:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zv8-T2-tyJ">
                                                 <rect key="frame" x="0.0" y="89" width="560" height="21"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="1" green="0.0" blue="0.027450980392156862" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Private key" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zv8-T2-tyJ">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFE-cW-myU">
                                                 <rect key="frame" x="0.0" y="110" width="560" height="21"/>
                                                 <animations/>
+                                                <color key="backgroundColor" red="0.78431372549019607" green="0.97647058823529409" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.25098039215686274" green="0.10196078431372549" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="h3P-tu-kgy">
@@ -80,15 +82,30 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xa2-uO-Ovs">
                                                 <rect key="frame" x="0.0" y="331" width="560" height="30"/>
                                                 <animations/>
-                                                <state key="normal" title="Button"/>
+                                                <color key="backgroundColor" red="1" green="0.55116491860828365" blue="0.48877705150059936" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="📝Save plain text"/>
+                                                <connections>
+                                                    <action selector="onButtonPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="7SS-RM-S1U"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HhF-nH-Boe">
                                                 <rect key="frame" x="0.0" y="361" width="560" height="30"/>
                                                 <animations/>
-                                                <state key="normal" title="Button"/>
+                                                <color key="backgroundColor" red="0.47042399860340445" green="1" blue="0.39598695889769375" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="🔐Encrypt plain text"/>
+                                                <connections>
+                                                    <action selector="onButtonPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="sOY-xw-oRk"/>
+                                                </connections>
                                             </button>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0PL-1e-HdS">
-                                                <rect key="frame" x="0.0" y="391" width="560" height="200"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Encrypted text:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpS-QH-HoM">
+                                                <rect key="frame" x="0.0" y="391" width="560" height="21"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="0.0" blue="0.027450980392156862" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0PL-1e-HdS">
+                                                <rect key="frame" x="0.0" y="412" width="560" height="200"/>
                                                 <animations/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
@@ -99,12 +116,23 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyw-Bs-bH3">
-                                                <rect key="frame" x="0.0" y="591" width="560" height="30"/>
+                                                <rect key="frame" x="0.0" y="612" width="560" height="30"/>
                                                 <animations/>
-                                                <state key="normal" title="Button"/>
+                                                <color key="backgroundColor" red="0.59299730698235131" green="1" blue="0.43324550413133522" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="🔓Decrypt cipher text"/>
+                                                <connections>
+                                                    <action selector="onButtonPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="7LT-rl-jDC"/>
+                                                </connections>
                                             </button>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="taF-sg-PFb">
-                                                <rect key="frame" x="0.0" y="621" width="560" height="200"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Decrypted text:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="er0-gz-qJz">
+                                                <rect key="frame" x="0.0" y="642" width="560" height="21"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="0.0" blue="0.027450980392156862" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="taF-sg-PFb">
+                                                <rect key="frame" x="0.0" y="663" width="560" height="200"/>
                                                 <animations/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
@@ -137,13 +165,20 @@
                             <constraint firstItem="bhX-eD-DZx" firstAttribute="top" secondItem="axL-ow-Wg9" secondAttribute="bottom" constant="20" id="ht2-bl-MsZ"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="RSA" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="cipherTextView" destination="0PL-1e-HdS" id="ifN-5f-PNv"/>
+                        <outlet property="decryptedTextView" destination="taF-sg-PFb" id="f2A-Zq-tkb"/>
+                        <outlet property="plainTextView" destination="h3P-tu-kgy" id="TeA-g7-OHg"/>
+                        <outlet property="privateKeyLabel" destination="NFE-cW-myU" id="pR6-Ph-jnC"/>
+                        <outlet property="publicKeyLabel" destination="xdq-AH-14v" id="Cwv-Dm-ytw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="-320"/>
         </scene>
-        <!--Second-->
+        <!--AES-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="iOS_FileCrypter" customModuleProvider="target" sceneMemberID="viewController">
@@ -154,14 +189,163 @@
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dm9-l0-PjM">
+                                <rect key="frame" x="20" y="20" width="560" height="511"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="J4b-NO-YBf">
+                                        <rect key="frame" x="8" y="8" width="560" height="860"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2fZ-qn-DOl">
+                                                <rect key="frame" x="0.0" y="0.0" width="560" height="47"/>
+                                                <animations/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="AES">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.15479827912462377" green="0.32508395882187635" blue="0.87624289772727271" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="36" name="Futura-MediumItalic"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <color key="highlightedColor" red="0.61344977680000001" green="0.48913071720000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secret key (32 chars):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxs-sY-QE5">
+                                                <rect key="frame" x="0.0" y="47" width="560" height="21"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.99782986111111116" green="0.00037629108950428317" blue="0.18658088676642848" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hh2-4D-s2p">
+                                                <rect key="frame" x="0.0" y="68" width="560" height="30"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LwZ-9c-Q2u">
+                                                <rect key="frame" x="0.0" y="98" width="560" height="30"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="0.55691916037220879" green="0.87624289772727271" blue="0.12889816897217746" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="🔑Set secret key">
+                                                    <color key="titleColor" red="0.18189228844495511" green="0.013152589868814027" blue="0.87624289772727271" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onSetKeyButtonPressed:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="ILV-61-NQu"/>
+                                                </connections>
+                                            </button>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7qx-PV-OjD">
+                                                <rect key="frame" x="0.0" y="128" width="560" height="200"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="G2i-WX-OuO"/>
+                                                </constraints>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Py-Eh-Nfl">
+                                                <rect key="frame" x="0.0" y="328" width="560" height="30"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="1" green="0.55116491860000005" blue="0.4887770515" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="📝Save plain text"/>
+                                                <connections>
+                                                    <action selector="onButtonPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Oss-8i-vQa"/>
+                                                    <action selector="onSavePlainTextButtonPressed:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="mDh-dh-d8D"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o3x-sA-KDY">
+                                                <rect key="frame" x="0.0" y="358" width="560" height="30"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="0.4704239986" green="1" blue="0.39598695890000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="🔐Encrypt plain text"/>
+                                                <connections>
+                                                    <action selector="onButtonPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="RTz-Mx-UEj"/>
+                                                    <action selector="onEncryptButtonPressed:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="5SO-ev-yaE"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Encrypted text:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="de5-uG-CgZ">
+                                                <rect key="frame" x="0.0" y="388" width="560" height="21"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="0.0" blue="0.027450980390000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddS-Av-BVD">
+                                                <rect key="frame" x="0.0" y="409" width="560" height="200"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="EzM-fD-1J9"/>
+                                                </constraints>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AlX-dz-VB6">
+                                                <rect key="frame" x="0.0" y="609" width="560" height="30"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="0.59299730699999997" green="1" blue="0.43324550410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="🔓Decrypt cipher text"/>
+                                                <connections>
+                                                    <action selector="onButtonPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="XTK-Hg-UZF"/>
+                                                    <action selector="onDecryptButtonPressed:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="cen-BP-rBs"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Decrypted text:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OF7-L3-jda">
+                                                <rect key="frame" x="0.0" y="639" width="560" height="21"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="0.0" blue="0.027450980390000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bau-ey-6zM">
+                                                <rect key="frame" x="0.0" y="660" width="560" height="200"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="ylV-VF-FGv"/>
+                                                </constraints>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.87624289772727271" green="0.85093342192834198" blue="0.4186331322620071" alpha="1" colorSpace="calibratedRGB"/>
+                                    </stackView>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstItem="J4b-NO-YBf" firstAttribute="leading" secondItem="dm9-l0-PjM" secondAttribute="leading" id="8qr-tL-chL"/>
+                                    <constraint firstItem="J4b-NO-YBf" firstAttribute="top" secondItem="dm9-l0-PjM" secondAttribute="top" id="Y5w-Zf-ONh"/>
+                                    <constraint firstAttribute="bottom" secondItem="J4b-NO-YBf" secondAttribute="bottom" id="f6A-hZ-lp8"/>
+                                    <constraint firstItem="J4b-NO-YBf" firstAttribute="width" secondItem="dm9-l0-PjM" secondAttribute="width" id="ghA-89-ujx"/>
+                                    <constraint firstAttribute="trailing" secondItem="J4b-NO-YBf" secondAttribute="trailing" id="ut0-Nx-CD5"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.845440019506977" green="0.87624289772727271" blue="0.412810363863781" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="dm9-l0-PjM" secondAttribute="trailing" id="HBP-5T-Env"/>
+                            <constraint firstItem="dm9-l0-PjM" firstAttribute="top" secondItem="pnm-Zf-f2W" secondAttribute="bottom" id="MJy-FJ-eoH"/>
+                            <constraint firstItem="203-GC-7Sf" firstAttribute="top" secondItem="dm9-l0-PjM" secondAttribute="bottom" constant="20" id="UIr-kj-2za"/>
+                            <constraint firstItem="dm9-l0-PjM" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="jeM-sJ-AFf"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="AES" image="second" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="cipherTextView" destination="ddS-Av-BVD" id="Hp0-gy-hs3"/>
+                        <outlet property="decryptedTextView" destination="Bau-ey-6zM" id="KDC-4x-WXy"/>
+                        <outlet property="plainTextView" destination="7qx-PV-OjD" id="RIq-2k-4WI"/>
+                        <outlet property="secretKeyTextField" destination="Hh2-4D-s2p" id="cI3-81-vih"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="359.15492957746477"/>
+            <point key="canvasLocation" x="750" y="359"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">

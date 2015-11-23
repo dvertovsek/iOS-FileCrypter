@@ -22,6 +22,8 @@ public class AesManager
     {
         self.iv = randomStringWithLength(16)
         self.secretKey = randomStringWithLength(32)
+        
+        file.createFile("secret_key", contentsOfFile: self.secretKey)
     }
     
     
@@ -51,7 +53,12 @@ public class AesManager
 
     }
     
-    public func setKey(var key: String)
+    public func getSecretKey()->String
+    {
+        return self.secretKey
+    }
+    
+    public func setSecretKey(var key: String)
     {
         let noOfCharacters = key.characters.count
         if(noOfCharacters < 32)
