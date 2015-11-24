@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52B1F8851C046F9E007F3BF6 /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B1F8841C046F9E007F3BF6 /* SignViewController.swift */; };
 		52DF12861BFAA6A500316605 /* File.h in Headers */ = {isa = PBXBuildFile; fileRef = 52DF12851BFAA6A500316605 /* File.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		52DF128A1BFAA6A500316605 /* File.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52DF12831BFAA6A500316605 /* File.framework */; };
 		52DF128B1BFAA6A500316605 /* File.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52DF12831BFAA6A500316605 /* File.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -58,6 +59,7 @@
 
 /* Begin PBXFileReference section */
 		11FEE4254A998E59D2108056 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52B1F8841C046F9E007F3BF6 /* SignViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
 		52DF12831BFAA6A500316605 /* File.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = File.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52DF12851BFAA6A500316605 /* File.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = File.h; sourceTree = "<group>"; };
 		52DF12871BFAA6A500316605 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				52F3D3001BF9C89400BE120A /* Assets.xcassets */,
 				52F3D3021BF9C89400BE120A /* LaunchScreen.storyboard */,
 				52F3D3051BF9C89400BE120A /* Info.plist */,
+				52B1F8841C046F9E007F3BF6 /* SignViewController.swift */,
 			);
 			path = "iOS-FileCrypter";
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 				52F3D2FC1BF9C89400BE120A /* SecondViewController.swift in Sources */,
 				52F3D2F81BF9C89400BE120A /* AppDelegate.swift in Sources */,
 				52F3D2FA1BF9C89400BE120A /* FirstViewController.swift in Sources */,
+				52B1F8851C046F9E007F3BF6 /* SignViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

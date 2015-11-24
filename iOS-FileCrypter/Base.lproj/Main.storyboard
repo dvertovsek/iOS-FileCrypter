@@ -21,7 +21,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="axL-ow-Wg9">
                                 <rect key="frame" x="20" y="20" width="560" height="511"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Jun-Ea-K4s">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Jun-Ea-K4s">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="863"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDr-xr-I9g">
@@ -131,7 +131,7 @@
                                                 <color key="textColor" red="1" green="0.0" blue="0.027450980392156862" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="taF-sg-PFb">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="taF-sg-PFb">
                                                 <rect key="frame" x="0.0" y="663" width="560" height="200"/>
                                                 <animations/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -361,11 +361,178 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="rFf-4k-THx" kind="relationship" relationship="viewControllers" id="11i-6q-zE9"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--Sign-->
+        <scene sceneID="OOj-N3-eBr">
+            <objects>
+                <viewController id="rFf-4k-THx" customClass="SignViewController" customModule="iOS_FileCrypter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bmA-1q-qi7"/>
+                        <viewControllerLayoutGuide type="bottom" id="QzT-Z9-qUp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JeN-dk-cOz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MnW-w0-clr">
+                                <rect key="frame" x="8" y="8" width="578" height="535"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7UA-r9-254">
+                                        <rect key="frame" x="10" y="8" width="560" height="614"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esE-dm-tQy">
+                                                <rect key="frame" x="0.0" y="0.0" width="560" height="47"/>
+                                                <animations/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Digital signature">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.15479827912462377" green="0.32508395882187635" blue="0.87624289772727271" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="36" name="Futura-MediumItalic"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <color key="highlightedColor" red="0.61344977680000001" green="0.48913071720000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plain text:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NrR-bx-79b">
+                                                <rect key="frame" x="0.0" y="47" width="560" height="21"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="0.019607843137254902" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fCi-ic-JPM">
+                                                <rect key="frame" x="0.0" y="68" width="560" height="128"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="NGp-9O-yAO"/>
+                                                </constraints>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JnS-N8-xB6">
+                                                <rect key="frame" x="0.0" y="196" width="560" height="30"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="1" green="0.55116491860000005" blue="0.4887770515" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="📝Save plain text"/>
+                                                <connections>
+                                                    <action selector="onButtonPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="d1a-c9-YzJ"/>
+                                                    <action selector="onButtonPressed:" destination="rFf-4k-THx" eventType="touchUpInside" id="mkw-D1-nt2"/>
+                                                    <action selector="onSavePlainTextButtonPressed:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="YJa-1b-KRR"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCK-yv-Jik">
+                                                <rect key="frame" x="0.0" y="226" width="560" height="30"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="0.61710484392349263" green="1" blue="0.87740822849447497" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="✒️Sign">
+                                                    <color key="titleColor" red="0.0" green="0.19772736052778983" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onButtonPressed:" destination="rFf-4k-THx" eventType="touchUpInside" id="9uQ-oF-La3"/>
+                                                    <action selector="onButtonPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Aam-nF-GSi"/>
+                                                    <action selector="onSavePlainTextButtonPressed:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="wpY-zO-zuJ"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hash:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUk-Hm-UYn">
+                                                <rect key="frame" x="0.0" y="256" width="560" height="21"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="0.019607843137254902" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KxK-1z-yGc">
+                                                <rect key="frame" x="0.0" y="277" width="560" height="128"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="m3j-WR-Je7"/>
+                                                </constraints>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Signature:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4b4-Cg-RC9">
+                                                <rect key="frame" x="0.0" y="405" width="560" height="21"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="0.019607843137254902" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1rO-XJ-c8b">
+                                                <rect key="frame" x="0.0" y="426" width="560" height="128"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="V8r-iJ-beh"/>
+                                                </constraints>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTI-Gq-gFV">
+                                                <rect key="frame" x="0.0" y="554" width="560" height="30"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="1" green="0.55116491860000005" blue="0.4887770515" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="📝Save signature"/>
+                                                <connections>
+                                                    <action selector="onButtonPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="0Fg-wr-f7C"/>
+                                                    <action selector="onButtonPressed:" destination="rFf-4k-THx" eventType="touchUpInside" id="mvI-Fq-82Z"/>
+                                                    <action selector="onSavePlainTextButtonPressed:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="KlL-6y-gdA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lph-gD-2My">
+                                                <rect key="frame" x="0.0" y="584" width="560" height="30"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="0.50677708718713921" green="1" blue="0.94763324416916284" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Check signature✅"/>
+                                                <connections>
+                                                    <action selector="onButtonPressed:" destination="rFf-4k-THx" eventType="touchUpInside" id="IET-ag-xMD"/>
+                                                    <action selector="onButtonPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="KRd-8n-bjp"/>
+                                                    <action selector="onSavePlainTextButtonPressed:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="4A0-Go-bB7"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstItem="7UA-r9-254" firstAttribute="top" secondItem="MnW-w0-clr" secondAttribute="top" id="IFg-yy-qfC"/>
+                                    <constraint firstAttribute="trailing" secondItem="7UA-r9-254" secondAttribute="trailing" id="NT6-nr-f3i"/>
+                                    <constraint firstAttribute="bottom" secondItem="7UA-r9-254" secondAttribute="bottom" id="OqN-Gn-gdw"/>
+                                    <constraint firstItem="7UA-r9-254" firstAttribute="width" secondItem="MnW-w0-clr" secondAttribute="width" id="cbA-UA-omf"/>
+                                    <constraint firstItem="7UA-r9-254" firstAttribute="leading" secondItem="MnW-w0-clr" secondAttribute="leading" id="iIk-EB-SLv"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.72589216698684234" green="1" blue="0.54744349792780322" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="MnW-w0-clr" firstAttribute="leading" secondItem="JeN-dk-cOz" secondAttribute="leadingMargin" id="3kr-P4-Few"/>
+                            <constraint firstItem="MnW-w0-clr" firstAttribute="top" secondItem="bmA-1q-qi7" secondAttribute="bottom" id="GP8-5y-1wR"/>
+                            <constraint firstItem="QzT-Z9-qUp" firstAttribute="top" secondItem="MnW-w0-clr" secondAttribute="bottom" constant="20" id="XNW-fj-cTZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MnW-w0-clr" secondAttribute="trailing" id="kOx-Yk-jkv"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Sign" image="first" id="hcK-P0-e8F"/>
+                    <connections>
+                        <outlet property="hashTextView" destination="KxK-1z-yGc" id="kyA-Zb-Pkb"/>
+                        <outlet property="plainTextView" destination="fCi-ic-JPM" id="yBZ-3U-QuN"/>
+                        <outlet property="signatureTextView" destination="1rO-XJ-c8b" id="iEa-6j-viw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aJ1-uW-L5g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="73" y="726"/>
         </scene>
     </scenes>
     <resources>
